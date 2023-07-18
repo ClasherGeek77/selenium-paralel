@@ -7,4 +7,4 @@ steps:
 sudo docker-compose up -d
 
 2. run
-pytest test_example.py
+pytest -n auto web_tests/
