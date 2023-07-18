@@ -1,0 +1,16 @@
+version: '3'
+
+services:
+  selenium:
+    image: selenium/standalone-chrome:109.0-chromedriver-109.0-grid-4.8.0-20230123
+    tty: true
+    volumes:
+      - /dev/shm:/dev/shm
+    ports:
+      - 127.0.0.1:4444:4444
+    environment:
+      - START_XVFB=true
+      - SE_NODE_MAX_SESSIONS=10
+      - SE_NODE_OVERRIDE_MAX_SESSIONS=true
+    shm_size: 2g
+    restart: always
