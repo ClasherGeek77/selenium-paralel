@@ -1,5 +1,5 @@
 # Parallel execution of web test cases through selenium
-*setup*
+## setup
 pip install --requirement requirements.pip
 
 steps:
